@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Задание 4</title>
-    <link rel="stylesheet" href="styles/task-04.css" />
     <style>
       body {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -17,19 +16,13 @@
     </style>
   </head>
   <body>
-    <p><a class="main-page-link" href="index.html">Main page</a></p>
+    <p><a href="index.html">На главную</a></p>
 
-    <form class="login-form">
-      <label class="input-name">
-        Email
-        <input class="input-field" type="email" name="email" />
-      </label>
-      <label class="input-name">
-        Password
-        <input class="input-field" type="password" name="password" />
-      </label>
-      <button class="btn-submit" type="submit">Log in</button>
-    </form>
+    <div id="counter">
+      <button type="button" data-action="decrement">-1</button>
+      <span id="value">0</span>
+      <button type="button" data-action="increment">+1</button>
+    </div>
 
     <script src="./js/task-04.js" type="module"></script>
   </body>
